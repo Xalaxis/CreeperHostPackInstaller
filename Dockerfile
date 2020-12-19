@@ -7,6 +7,9 @@ RUN apt-get upgrade -y
 # Make sure we have jq for JSON parsing
 RUN apt-get install jq -y
 
+# Create install directory if it isn't mounted to the host already
+RUN mkdir -p cd /opt/minecraftftb
+
 WORKDIR /tmp/creeperpackinstaller
 COPY downloadpack.sh .
 RUN chmod +x downloadpack.sh

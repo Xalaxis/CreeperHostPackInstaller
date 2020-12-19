@@ -10,9 +10,6 @@ if [ "$VERSION" == "LATEST" ]
 # Lookup the latest version available from the API and save it to the version variable
 then VERSION=$(curl https://api.modpacks.ch/public/modpack/$MODPACKID/ | jq '.versions[-1].id'); fi;
 
-
-
-echo "Cleaning up old installation (if any, exluding world and property files)..."
 # We shouldn't need to check for existance, because the folder must exist to allow it to be mounted.
 # Switch working directory
 cd /opt/minecraftftb

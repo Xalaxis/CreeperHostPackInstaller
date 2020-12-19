@@ -12,4 +12,5 @@ RUN mkdir -p cd /opt/minecraftftb
 
 WORKDIR /tmp/creeperpackinstaller
 COPY downloadpack.sh .
+COPY cleanup.sh .
 RUN chmod +x downloadpack.sh

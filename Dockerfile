@@ -8,5 +8,5 @@ RUN apt-get upgrade -y
 RUN apt-get install jq -y
 
 WORKDIR /usr/src/temporary
-COPY install.sh .
-RUN chmod +x install.sh
+COPY downloadpack.sh .
+RUN chmod +x downloadpack.sh

@@ -2,6 +2,9 @@
 set -e # Error out immediately on failed line
 set +x # Don't print commands as they are run
 
+echo "Looking for version: $VERSION"
+echo "Looking for packID: $MODPACKID"
+
 # If we're using the latest version (it's not manually specified)
 if [ "$VERSION" == "LATEST" ]
 # Lookup the latest version available from the API and save it to the version variable

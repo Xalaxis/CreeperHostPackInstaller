@@ -36,4 +36,4 @@ echo "=========================="
 echo "Downloading installer..."
 wget https://api.modpacks.ch/public/modpack/$MODPACKID/$VERSION/server/linux --content-disposition
 echo "Making it executable..."
-chmod +x ./serverinstall_$MODPACKID_$VERSION
+chmod +x ./serverinstall_"$MODPACKID"_"$VERSION"

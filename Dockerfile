@@ -7,6 +7,6 @@ RUN apt-get upgrade -y
 # Make sure we have jq for JSON parsing
 RUN apt-get install jq -y
 
-WORKDIR /usr/src/temporary
+WORKDIR /tmp/creeperpackinstaller
 COPY downloadpack.sh .
 RUN chmod +x downloadpack.sh

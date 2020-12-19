@@ -34,6 +34,6 @@ rm -f serverinstall*
 echo "=========================="
 
 echo "Downloading installer..."
-wget https://api.modpacks.ch/public/modpack/6/$VERSION/server/linux --content-disposition
+wget https://api.modpacks.ch/public/modpack/$MODPACKID/$VERSION/server/linux --content-disposition
 echo "Making it executable..."
-chmod +x ./serverinstall_6_$VERSION
+chmod +x ./serverinstall_$MODPACKID_$VERSION

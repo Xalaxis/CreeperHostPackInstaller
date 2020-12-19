@@ -35,5 +35,7 @@ echo "=========================="
 
 echo "Downloading installer..."
 wget https://api.modpacks.ch/public/modpack/$MODPACKID/$VERSION/server/linux --content-disposition
+echo "Renaming..."
+mv ./serverinstall_"$MODPACKID"_"$VERSION" ./serverinstall
 echo "Making it executable..."
-chmod +x ./serverinstall_"$MODPACKID"_"$VERSION"
+chmod +x ./serverinstall

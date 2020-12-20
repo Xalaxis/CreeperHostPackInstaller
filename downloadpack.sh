@@ -20,3 +20,7 @@ wget https://api.modpacks.ch/public/modpack/$MODPACKID/$VERSION/server/linux --c
 #mv ./serverinstall_"$MODPACKID"_"$VERSION" ./serverinstall
 echo "Making it executable..."
 chmod +x ./serverinstall_"$MODPACKID"_"$VERSION"
+
+# echo "Creating Minecraft EULA file"
+RUN echo "eula=true" > eula.txt
+ENTRYPOINT [ "bash", "-c", "java -server -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -Xmx${MAXMEMORY} -Xms${MINMEMORY} -Dfml.queryResult=confirm -jar forge-*.jar nogui" ]

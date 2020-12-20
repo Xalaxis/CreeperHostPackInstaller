@@ -12,3 +12,7 @@ VERSION | Version of the modpack wanted, "LATEST" for the latest available | LAT
 MODPACKID | CreeperHost ID for the modpack wanted | N/A
 MAXMEMORY | Maximum memory for the Java VM | 4G
 MINMEMORY | Minimum memory for the Java VM | 3072M
+
+## Java versions
+
+There are currently two different tags for this image, java8 and java11 which use the referenced Java JRE version.

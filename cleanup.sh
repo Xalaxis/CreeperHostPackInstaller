@@ -19,4 +19,5 @@ echo "Deleting packmenu..." # Not sure what this folder is, but I don't think an
 rm -rf ./packmenu
 echo "Deleting old installers..." # These shouldn't conflict, but I'm deleting them in-case they ever have a hotfix release with the same name
 rm -f serverinstall*
+echo "Cleanup Complete ✅"
 echo "=========================="

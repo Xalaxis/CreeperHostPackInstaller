@@ -11,6 +11,6 @@ echo "Copying new files..."
 cp -R /tmp/creeperpackinstaller/* /opt/minecraftftb
 
 # echo "Creating Minecraft EULA file"
-echo "Now starting server..."
+echo "Now starting server 👈😎👈"
 echo "eula=true" > eula.txt
 java -server -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -Xmx${MAXMEMORY} -Xms${MINMEMORY} -Dfml.queryResult=confirm -jar forge-*.jar nogui

@@ -1,4 +1,4 @@
-# CreeperHostPackInstaller 💿
+# CreeperHostPackInstaller (CHPI) 💿
  
 Intermediary container to handle downloading a CreeperHost Modpack (As far as I'm aware, just Feed the Beast ones) and installing it.
 

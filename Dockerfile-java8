@@ -13,4 +13,12 @@ RUN mkdir -p cd /opt/minecraftftb
 WORKDIR /tmp/creeperpackinstaller
 COPY downloadpack.sh .
 COPY cleanup.sh .
-RUN chmod +x downloadpack.sh
+COPY setup.sh .
+RUN chmod +x downloadpack.sh cleanup.sh setup.sh
+
+# Default launch arguments
+
+ENV MAXMEMORY="4G"
+ENV MINMEMORY="3072M"
+
+ENTRYPOINT [ "bash", "./setup.sh" ]

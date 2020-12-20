@@ -12,7 +12,7 @@ then VERSION=$(curl https://api.modpacks.ch/public/modpack/$MODPACKID/ | jq '.ve
 
 # We shouldn't need to check for existance, because the folder must exist to allow it to be mounted.
 # Switch working directory
-cd /opt/minecraftftb
+#cd /opt/minecraftftb
 
 echo "Downloading installer..."
 wget https://api.modpacks.ch/public/modpack/$MODPACKID/$VERSION/server/linux --content-disposition

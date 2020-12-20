@@ -1,4 +1,6 @@
 # CreeperHostPackInstaller (CHPI) 💿
+
+![Build and Push Latest Versions](https://github.com/Xalaxis/CreeperHostPackInstaller/workflows/Build%20and%20Push%20Latest%20Versions/badge.svg)
  
 Intermediary container to handle downloading a CreeperHost Modpack (As far as I'm aware, just Feed the Beast ones) and installing it.
 

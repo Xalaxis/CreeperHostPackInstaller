@@ -17,12 +17,12 @@ MINMEMORY | Minimum memory for the Java VM | 3072M
 
 Container Path | Purpose
 ---------------|---------
-/mnt/minecraftftb | Location of the server files
-/mixin | Mix-in mods, see below
+/opt/minecraftftb | Location of the server files
+/mixins | Mix-in mods, see below
 
 ## Mix-ins
 
-Any content placed in the /mixin directory will be automatically added to the /mods directory of the server after the installation is complete. This can be used to add additional mods, such as DynMap, to the server.
+Any content placed in the /mixins directory will be automatically added to the /mods directory of the server after the installation is complete. This can be used to add additional mods, such as DynMap, to the server.
 
 ## Java versions
 

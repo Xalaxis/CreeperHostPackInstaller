@@ -32,7 +32,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ env.IMAGE_NAME }}:java11
+          tags:
+          - ${{ env.IMAGE_NAME }}:java11
+          - ${{ env.IMAGE_NAME }}:latest
           file: "./Dockerfile-java11"
       -
         name: Image digest

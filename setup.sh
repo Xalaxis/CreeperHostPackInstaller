@@ -12,7 +12,7 @@ cp -R /tmp/creeperpackinstaller/* /opt/minecraftftb
 
 echo "Copying Mix-ins if any..."
 
-cp - R /mixins/* /opt/minecraftftb/mods
+cp -R /mixins/* /opt/minecraftftb/mods
 
 # echo "Creating Minecraft EULA file"
 echo "Now starting server 👈😎👈"

@@ -1,5 +1,5 @@
 # Based on JDK 11, as I think that is the most recent version which works with FTB Omnia and I'm assuming that more recent versions of Java have better optimizations
-FROM openjdk:8
+FROM openjdk:8-jre
 LABEL maintainer="matthew+docker@wolfie.ovh"
 # Upgrade all packages to latest versions available
 RUN apt-get update

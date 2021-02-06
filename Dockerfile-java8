@@ -6,6 +6,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 # Make sure we have jq for JSON parsing
 RUN apt-get install jq -y
+# Also collect webp libraries, for use in images which want Dynmap
+RUN apt-get install webp -y
 
 # Create install directory if it isn't mounted to the host already
 RUN mkdir -p cd /opt/minecraftftb

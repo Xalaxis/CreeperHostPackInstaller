@@ -13,6 +13,21 @@ MODPACKID | CreeperHost ID for the modpack wanted | N/A
 MAXMEMORY | Maximum memory for the Java VM | 4G
 MINMEMORY | Minimum memory for the Java VM | 3072M
 
+## Mount locations
+
+Container Path | Purpose
+---------------|---------
+/opt/minecraftftb | Location of the server files
+/mixins | Mix-in mods, see below
+
+## Mix-ins
+
+Any content placed in the /mixins directory will be automatically added to the /mods directory of the server after the installation is complete. This can be used to add additional mods, such as DynMap, to the server.
+
 ## Java versions
 
 There are currently two different tags for this image, java8 and java11 which use the referenced Java JRE version.
+
+## Mod Removals in later versions of a pack
+
+This container has -Dfml.queryResult=confirm set, which means that in the event of any mod removals between versions, the change will be silently accepted.

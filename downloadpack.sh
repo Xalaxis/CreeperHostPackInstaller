@@ -12,7 +12,7 @@ then VERSION=$(curl https://api.modpacks.ch/public/modpack/$MODPACKID/ | jq '.ve
 
 # Write version we are using to GitHub Actions
 
-echo "modpack_version=$VERSION" >> $GITHUB_ENV
+echo "modpack_version=(curl https://api.modpacks.ch/public/modpack/$MODPACKID/ | jq '.versions[-1].id')" >> $GITHUB_ENV
 
 # We shouldn't need to check for existance, because the folder must exist to allow it to be mounted.
 # Switch working directory

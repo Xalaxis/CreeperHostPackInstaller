@@ -17,4 +17,4 @@ cp -R /mixins/* /opt/minecraftftb/mods
 # echo "Creating Minecraft EULA file"
 echo "Now starting server 👈😎👈"
 echo "eula=true" > eula.txt
-exec java -server -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -Xmx${MAXMEMORY} -Xms${MINMEMORY} -Dfml.queryResult=confirm -jar forge-*.jar nogui
+exec java -server -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -Xmx${MAXMEMORY} -Xms${MINMEMORY} -Dfml.queryResult=confirm -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -jar forge-*.jar nogui

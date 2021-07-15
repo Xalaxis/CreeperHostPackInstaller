@@ -4,15 +4,20 @@ cp cleanup.sh /opt/minecraftftb
 
 cd /opt/minecraftftb
 
-bash cleanup.sh
+if [ "$DONTUPDATE" == "True" ]; then
+     echo "Operating in manual mode!"
+     echo "Updating disabled. Not overwriting files."
+else
+     bash cleanup.sh
 
-echo "Copying new files..."
+     echo "Copying new files..."
 
-cp -R /tmp/creeperpackinstaller/* /opt/minecraftftb
+     cp -R /tmp/creeperpackinstaller/* /opt/minecraftftb
 
-echo "Copying Mix-ins if any..."
+     echo "Copying Mix-ins if any..."
 
-cp -R /mixins/* /opt/minecraftftb/mods
+     cp -R /mixins/* /opt/minecraftftb/mods
+fi
 
 # echo "Creating Minecraft EULA file"
 echo "Now starting server 👈😎👈"
